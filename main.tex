@@ -1,40 +1,80 @@
 %  Tipo de documento:
-\documentclass[12pt, a4paper]{book}
+\documentclass[12pt, a4paper]{article}
 
 %  Pacotes:
 \usepackage[brazil]{babel}
 \usepackage{amsmath}
 \usepackage{graphicx}
 
+
 %  Corpo do documento:
 \begin{document}
 \bgroup\obeylines
+
+\title{Teoria de construção de baralhos}
+\author{Bruno/Nathan}
     %  Titulo:
-    \textbf{Teoria de construção de baralhos}
+    \maketitle
  
     Esse documento se trata de um compilado de informações sobre "Deckbuilding"
     
 
     % Sub-Titulos
+
+    \section{Otimização de curva de mana}
     \input{SubArticles/CurvaMana}
+
+    \section{Otimização de terrenos}
     \input{SubArticles/OptimizingLands}
+
+    \section{Staples armadilhas}
     \input{SubArticles/BaitStaples}
+
+    \section{Cartas que você deve evitar}
     \input{SubArticles/InstaCuts}
+
+    \section{Balanceando os Slots do baralho}
     \input{SubArticles/BalancingSlots}
+
+    \section{Conjuntos de cartas que pode considerar}
     \input{SubArticles/CardsPackage}
+
+    \section{Articulando o plano de jogo}
     \input{SubArticles/GamePlan}
+
+    \section{Critérios especificos de cada cor}
     \input{SubArticles/SpecificColors}
+
+    \section{Critérios especificos de cada estratégia}
     \input{SubArticles/SpecificStrategies}
 
+    \section{Entendendo e manejando o Tempo do deck}
     \input{SubArticles/Tempo}
+
+    \section{Entendendo e manejando o Gás do deck}
     \input{SubArticles/Value}
+
+    \section{Garantindo a robustes do deck}
     \input{SubArticles/Robustness}
+
+    \section{Finalização de jogo do baralho}
     \input{SubArticles/FinishingGame}
+
+    \section{Importância de jogar na pilha, interagir e responder}
     \input{SubArticles/Interactions}
+
+    \section{Entendendo e corrigindo as fraquezas do Deck}
     \input{SubArticles/RecognizeWeakness}
+
+    \section{Dependencia do comandante}
     \input{SubArticles/CommanderDependence}
+
+    \section{Reeavaliando o baralho e seus slots}
     \input{SubArticles/ReevaluatingCardsInGame}
+
+    \section{Glossário}
     \input{SubArticles/Glossary}
+
     \end{document}
     
     
