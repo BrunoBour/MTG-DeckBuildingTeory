@@ -6,8 +6,13 @@
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
 
 
+
+
+\graphicspath{ {./Images/} }
+\newcommand{\card}[1]{\href{https://gatherer.wizards.com/Pages/Card/Details.aspx?name=#1}{#1}}
 %  Corpo do documento:
 \begin{document}
 \bgroup\obeylines
@@ -24,6 +29,8 @@
     \pagebreak
     % Sub-Titulos
 
+    % É assim que se adiciona uma imagem: \includegraphics{Sol Ring}
+    % É assim que se adiciona uma carta com href \card{Ihsan's Shade}
     
     \section{Introdução}
     \input{SubArticles/introduction} \pagebreak
