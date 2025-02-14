@@ -7,12 +7,23 @@
 \usepackage{graphicx}
 \usepackage[hidelinks]{hyperref}
 \usepackage{graphicx}
+\usepackage{bookmark}
+\usepackage{amsmath}
 
-
+\newenvironment{changemargin}[2]{%
+\begin{list}{}{%
+\setlength{\topsep}{0pt}%
+\setlength{\leftmargin}{#1}%
+\setlength{\rightmargin}{#2}%
+\setlength{\listparindent}{\parindent}%
+\setlength{\itemindent}{\parindent}%
+\setlength{\parsep}{\parskip}%
+}%
+\item[]}{\end{list}}
 
 
 \graphicspath{ {./Images/} }
-\newcommand{\card}[1]{\href{https://gatherer.wizards.com/Pages/Card/Details.aspx?name=#1}{#1}}
+\newcommand{\card}[1]{\href{https://gatherer.wizards.com/Pages/Card/Details.aspx?name=#1}{\textit{#1}}}
 %  Corpo do documento:
 \begin{document}
 \bgroup\obeylines
@@ -31,6 +42,7 @@
 
     % É assim que se adiciona uma imagem: \includegraphics{Sol Ring}
     % É assim que se adiciona uma carta com href \card{Ihsan's Shade}
+
     
     \section{Introdução}
     \input{SubArticles/introduction} \pagebreak
